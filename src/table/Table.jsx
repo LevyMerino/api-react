@@ -89,8 +89,8 @@ function Table() {
           <h1> {charter.name} </h1>
           <img src={charter.images[0].href} />
           <h3>Skills</h3>
-          {charter.skills.map((item) => (
-            <li> {item.skill} </li>
+          {charter.skills.map((item, index) => (
+            <li key={index}> {item.skill} </li>
           ))}
         </div>
       )}
